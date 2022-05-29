@@ -1,0 +1,25 @@
+#Se inicializan variables
+set x "UNO"
+set y 1
+set z UNO
+switch $x {
+"$z" {
+set y1 [expr {$y+1}]
+puts "COINCIDE \$z. $y + $z is $y1"
+}
+ONE {
+set y1 [expr {$y+1}]
+puts "COINCIDE UNO. $y + uno es $y1"
+}
+TWO {
+set y1 [expr {$y+2}]
+puts "COINCIDE DOS. $y + dos es $y1"
+}
+THREE {
+set y1 [expr {$y+3}]
+puts "COINCIDE TRES. $y + tres es $y1"
+}
+default {
+puts "$x no tiene COINCIDENCIA"
+}
+}
